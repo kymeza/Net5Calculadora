@@ -1,0 +1,37 @@
+﻿@model Operation
+<form asp-controller="Home" asp-action="Index" method="post">
+    <div class="form-group">
+        <div class="row">
+            <label asp-for="OperationType" class="col-lg-2"></label>
+            <select asp-for="OperationType" class="col-lg-2" asp-items="Html.GetEnumSelectList<OperationType>()">
+                <option selected="selected" value="">Select</option>
+            </select>
+        </div>
+        <div class="row" >
+            <label asp-for="NumberA" class="col-lg-2"></label>
+            <input type="text" onKeyUp="javascript: replaceComma('NumberA'); " onBlur="javascript: replaceComma('NumberA');" asp-for="NumberA" class="col-lg-2" />
+        </div>
+        <div class="row">
+            <label asp-for="NumberB" class="col-lg-2"></label>
+            <input type="text" onKeyUp="javascript: replaceComma('NumberB'); " onBlur="javascript: replaceComma('NumberB');" asp-for="NumberB" class="col-lg-2" />
+        </div>
+        <div class="row">
+            <label asp-for="Result" class="col-lg-2"></label>
+            <input type="text" onKeyUp="javascript: replaceComma('Result'); " onBlur="javascript: replaceComma('Result');" disabled="disabled" class="col-lg-2" asp-for="Result" />
+        </div>
+
+        <div class="row">
+            <input type="submit" value="Submit" asp-action="Index" />
+        </div>
+    </div>
+</form>
+
+<script type="text/javascript">
+    function replaceComma(i) {
+        var val = document.getElementById(i).value;
+        if (val.match(/\./)) {
+            val = val.replace(/\./g, ',');
+            document.getElementById(i).value = val;
+        }
+    }
+</script>
