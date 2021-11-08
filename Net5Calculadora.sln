@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraTests", "Calcula
 		{9868835C-C201-4B7D-BC2B-5085CEDE64D2} = {9868835C-C201-4B7D-BC2B-5085CEDE64D2}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraAcceptanceTests", "CalculadoraAcceptanceTests\CalculadoraAcceptanceTests.csproj", "{89DF33FE-8CD3-4F7D-80F5-E35A410E63CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,10 @@ Global
 		{575627EA-B674-4CBA-ACFA-E91A35F15A31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{575627EA-B674-4CBA-ACFA-E91A35F15A31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{575627EA-B674-4CBA-ACFA-E91A35F15A31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89DF33FE-8CD3-4F7D-80F5-E35A410E63CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89DF33FE-8CD3-4F7D-80F5-E35A410E63CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89DF33FE-8CD3-4F7D-80F5-E35A410E63CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89DF33FE-8CD3-4F7D-80F5-E35A410E63CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
